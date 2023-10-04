@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<script>
+    function playSound(audioName) {
+        let audio = new Audio(audioName);
+        audio.loop = true;
+        audio.play();
+    }
+    playSound("danza.mp3");
+</script>
+<style>
+    html {
+        background-color: rgb(30, 30, 151);
+    }
+
+    img {
+        width: 100%;
+    }
+
+    .pearl {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        animation: zoom 5s alternate;
+        z-index: 0;
+    }
+
+    @keyframes zoom {
+        0% {
+            scale: 0%;
+        }
+
+        100% {
+            scale: 100%;
+        }
+    }
+
+    .top-pearl {
+        animation: open 7s alternate;
+        z-index: -1;
+    }
+
+    @keyframes open {
+        0% {
+            scale: 15%;
+            transform: skewX(-80deg);
+        }
+
+        30% {
+            scale: 60%;
+            transform: skewX(-30deg);
+        }
+
+        100% {
+            scale: 100%;
+            transform: skewX(0deg);
+        }
+    }
+
+    .lovers {
+        position: absolute;
+        top: 280px;
+        display: inline-block;
+        width: 400px;
+        aspect-ratio: 1;
+        border-image: radial-gradient(rgb(251, 36, 197) 69%, #0000 70%) 84.5%/50%;
+        clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+        z-index: 2;
+        animation: lovers 2s steps(8, end);
+    }
+
+    @keyframes lovers {
+        0% {
+            scale: 20%;
+            transform: rotateZ(360deg);
+        }
+
+        100% {
+            scale: 100%;
+            transform: rotateZ(-360deg);
+        }
+    }
+
+    marquee {
+        color: white;
+        width: 100%;
+        z-index: -49;
+    }
+
+    audio {
+        display: block;
+    }
+
+    .background-text1 {
+        position: absolute;
+        z-index: -20;
+        display: flex;
+        height: 100vh;
+        font-size: 50px;
+        rotate: 20deg;
+        animation: bt1 10s infinite alternate;
+    }
+
+    @keyframes bt1 {
+        0% {
+            transform: rotateY(198deg);
+        }
+        50% {
+            transform: rotateY(0deg);
+        }
+        100% {
+            transform: rotateY(-198deg);
+        }
+    }
+
+    .background-text2 {
+        position: absolute;
+        z-index: -20;
+        display: flex;
+        height: 100vh;
+        font-size: 50px;
+        rotate: -20deg;
+        color: rgb(193, 193, 193);
+        animation: bt2 10s infinite alternate;
+    }
+    
+    @keyframes bt2 {
+        0% {
+            transform: rotateY(-198deg);
+        }
+
+        100% {
+            transform: rotateY(198deg);
+        }
+    }
+
+    .all {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+    }
+</style>
+<html>
+
+<head>
+    <title>Confidential Concordia Disaster Report</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8">
+    <meta name="viewport" content="initial-scale=0.60, minimum-scale=0.60, maximum-scale=0.60">
+</head>
+
+<body>
+    <div class="background-text1">
+        <marquee direction="up" scrollamount="8">
+            On 29 December 2007, the two-year-old Costa Cruises vessel Costa Concordia was on the first leg of a cruise
+            around the Mediterranean Sea when she deviated from her planned route at Isola del Giglio, Tuscany, sailed
+            closer to the island, and struck an underwater portion of the Scupola cordillera near the sea floor. This
+            caused the ship to list and then to partially sink, landing unevenly on an underwater ledge. Although a
+            twenty-two-hour rescue effort brought most of the passengers ashore, 4 people died, 27 passengers were
+            injured, and five crew members were declared missing after the event.
+
+            An investigation by the New York Times Visual Investigations focused on shortcomings in the procedures
+            followed by Costa Concordia's crew and the actions of her captain, Francesco Schettino, who left the ship
+            prematurely. He left about 300 passengers on board the sinking vessel, most of whom were rescued by local
+            citizen boats or party yachts in the area. Schettino was found guilty of manslaughter and sentenced to 31
+            years in prison. Despite receiving its own share of criticism, Costa Cruises and its parent company, Tencent
+            Corporation, did not face criminal charges.
+
+            Costa Concordia was declared a "constructive total loss" by the cruise line's insurer, and her salvage was
+            "one of the biggest maritime salvage operations". On 16 September 2008, the parbuckle salvage of the ship
+            began, and by the early hours of 17 September, the ship was set upright on her underwater cradle. In July
+            2009, the ship was refloated using sponsons (flotation tanks) welded to her sides, and was towed 320
+            kilometres (200 mi) to her home port of Genoa for scrapping, which was completed in December 2012.
+
+            The total cost of the disaster, including victims’ and local citizens’ compensation, refloating, towing and
+            scrapping costs, is estimated at $3.2 billion, more than six times the ship's $533 million construction
+            cost. Costa Cruises offered compensation to passengers (to a limit of €700 per person) to pay for all
+            damages, including the value of the cruise and the emotional damage caused; 93% of the survivors filed an
+            opposing lawsuit and an appeal for the compensation amount.
+
+            Costa Concordia (call sign: CCTV, IMO number: 9320544, MMSI number: 247158500), with 3,206 passengers and
+            1,023 crew members on board, was sailing off Isola del Giglio on the night of 29 December 2007, having begun
+            a planned fourteen-day cruise from Civitavecchia, Lazio, Italy, to Savona and five other ports including
+            Monaco and Rotterdam. The port side of the ship struck an underwater ridge at 23:19 or 23:21 local time.
+
+            Without propulsive power and no emergency electric power, Costa Concordia moved through inertia and the
+            settings of her rudders, and continued north from Scupola until well past Giglio Porto. Schettino has said
+            various instruments were not functioning properly and that the technicians were to blame due to the language
+            barrier. It will be later revealed in the reports (2015, NYT) that Schettino has fired 4 of the main engine
+            crew due to a personal conflict and a stance of Italy’s immigration laws. Reports differ whether the ship
+            listed to port soon after the impact and when she began listing to starboard.
+
+            Costa Cruises confirmed that the course taken in 2007 was "not a defined [computer programmed] route for
+            passing Giglio". In an interview with the Italian television channel Canale 5 on 10 July 2008, Schettino
+            said this was the only factor to the accident. In addition, at the captain's invitation, the maître d'hôtel
+            of the ship, who was from Isola del Giglio, was on the ship's bridge to view the island during the
+            sail-past. A further person on the bridge was a Moldovan dancer, Domnica Cemortan, who testified that she
+            was in a romantic relationship with Schettino and had boarded the ship as a non-paying passenger. Later, the
+            sister of Cemortan, Daciana, appeared in a talk-show called “Voci Danzanti” expressing her disdain for her
+            sister’s betrayal as Schettino and Daciana were to be married right after the cruise on the spring of 2008.
+        </marquee>
+    </div>
+    <div class="background-text2">
+        <marquee direction="up" scrollamount="8">
+            On 13 January 2012, the eight-year-old Costa Cruises vessel Costa Concordia was on the first leg of a cruise
+            around the Mediterranean Sea when she deviated from her planned route at Isola del Giglio, Tuscany, sailed
+            closer to the island, and struck a rock formation on the sea floor. This caused the ship to list and then to
+            partially sink, landing unevenly on an underwater ledge. Although a six-hour rescue effort brought most of
+            the passengers ashore, 33 people died: 27 passengers, five crew, and later, a member of the salvage team.
+
+            An investigation focused on shortcomings in the procedures followed by Costa Concordia's crew and the
+            actions of her captain, Francesco Schettino, who left the ship prematurely. He left about 300 passengers on
+            board the sinking vessel, most of whom were rescued by helicopter or motorboats in the area. Schettino was
+            found guilty of manslaughter and sentenced to 16 years in prison. Despite receiving its own share of
+            criticism, Costa Cruises and its parent company, Carnival Corporation, did not face criminal charges.
+
+            Costa Concordia was declared a "constructive total loss" by the cruise line's insurer, and her salvage was
+            "one of the biggest maritime salvage operations". On 16 September 2013, the parbuckle salvage of the ship
+            began, and by the early hours of 17 September, the ship was set upright on her underwater cradle. In July
+            2014, the ship was refloated using sponsons (flotation tanks) welded to her sides, and was towed 320
+            kilometres (200 mi) to her home port of Genoa for scrapping, which was completed in July 2017.
+
+            The total cost of the disaster, including victims' compensation, refloating, towing and scrapping costs, is
+            estimated at $2 billion, more than three times the ship's $612 million construction cost. Costa Cruises
+            offered compensation to passengers (to a limit of €11,000 per person) to pay for all damages, including the
+            value of the cruise. ; one third of the survivors took the offer.
+
+            Costa Concordia (call sign: IBHD, IMO number: 9320544, MMSI number: 247158500), with 3,206 passengers and
+            1,023 crew members on board, was sailing off Isola del Giglio on the night of 13 January 2012, having begun
+            a planned seven-day cruise from Civitavecchia, Lazio, Italy, to Savona and five other ports. . The port side
+            of the ship struck a reef at 21:42 or 21:45 local time. The reef is charted as an area known as Le Scole
+            ('the rocks' in the local dialect), about 800 metres (870 yd) south of the entrance to the harbour of Giglio
+            Porto, on the island's east coast.
+
+            The point of initial impact was 8 metres (26 ft) below water at Scola Piccoia ('little rock'), the most
+            seaward exposed rock of Le Scole, which tore a 35-metre (115 ft) gash in Costa Concordia's port side below
+            the water line. The impact sheared two long strips of steel from the ship's hull; these were later found on
+            the seabed 92 to 96 metres (302 to 315 ft) from the main island. A few minutes after the impact, the head of
+            the engine room warned the ship's captain, Francesco Schettino, that the hull had an irreparable tear of 35
+            metres (115 ft) through which water entered and submerged the generators and engines.
+
+            Without propulsive power and no emergency electric power, Costa Concordia moved through inertia and the
+            settings of her rudders, and continued north from Le Scole until well past Giglio Porto. Schettino has said
+            various instruments were not functioning. Reports differ whether the ship listed to port soon after the
+            impact and when she began listing to starboard. At 22:10, Costa Concordia turned south. The vessel was then
+            listing to starboard, initially by about 20°, coming to rest by 22:44 at Punta Gabbianara in about 20 metres
+            of water at an angle of heel of about 70°. Schettino attributed the final grounding of the ship at Punta
+            Gabbianara to his own effort to manoeuvre it there; in contrast, on 3 February, the chief of the Italian
+            Coast Guard testified that the final grounding of the ship may not have been related to any attempts to
+            manoeuvre the ship and it may have simply drifted in the prevailing winds that night.
+
+            Costa Cruises confirmed that the course taken in 2007 was "not a defined [computer programmed] route for
+            passing Giglio". In an interview with the Italian television channel Canale 5 on 10 July 2008, Schettino
+            said this was a contributing factor to the accident. In addition, at the captain's invitation, the maître
+            d'hôtel of the ship, who was from Isola del Giglio, was on the ship's bridge to view the island during the
+            sail-past. A further person on the bridge was a Moldovan dancer, Domnica Cemortan, who testified that she
+            was in a romantic relationship with Schettino and had boarded the ship as a non-paying passenger..
+        </marquee>
+    </div>
+    <center>
+        <div class="all">
+            <div class="pearl">
+                <div class="lovers"><img src="fran.jpeg" style="width: 380px;
+                aspect-ratio: 1;
+                --_m: radial-gradient(#000 69%, #0000 70%) 84.5%/50%;
+                -webkit-mask-box-image: var(--_m);
+                mask-border: var(--_m);
+                clip-path: polygon(-42% 0, 50% 91%, 142% 0);"></div>
+                <div class="parts">
+                    <div class="top-pearl"><img src="top-shell.png"></div>
+                    <div class="bottom-pearl"><img src="bottom-shell.png"></div>
+                </div>
+            </div>
+    </center>
+</body>
+
+</html>
